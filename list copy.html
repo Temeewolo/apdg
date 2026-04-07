@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Articles - Style Vinted</title>
+    <link href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-light bg-success border-bottom sticky-top">
+        <div class="container d-flex justify-content-between"><a class="navbar-brand fs-4 fw-bold">Au Plaisir du Gout
+            </a><input class="form-control w-50" placeholder="Rechercher des articles..." /></div>
+        <div class="p-3 position-relative">
+            <button class="btn btn-success" style="border: solid 1px;border-radius: 50px;" data-bs-toggle="modal"
+                data-bs-target="#cartmodal">
+                <i class="bi bi-cart"></i>
+            </button>
+            <div class="badge bg-danger position-absolute" style="border-radius: 50%;bottom: 10px;right: 10px;">2</div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="row g-3">
+            <div class="col-sm-12 col-md-4 col-lg-3 position-relative">
+                <a href="produit.html" class="text-decoration-none text-dark">
+                    <div class="card shadow-sm">
+                        <img src="./Omellette.png" class="card-img-top" style="height: 300px;">
+                        <div class="card-body">
+                            <h6 class="card-title">
+                                Omelette garni
+                            </h6>
+                            <p class="fw-bold">
+                                1000 fcfa
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <button class="position-absolute" style="bottom: 20px;right:20px;border-radius:50%;">
+                    <i class="bi bi-cart-plus"></i>
+                    <div class="badge bg-danger position-absolute" id="product<?php echo $id_produit ?>"
+                        style="border-radius: 50%;bottom: -10px;right:-10px;"></div>
+                </button>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 position-relative">
+                <a href="produit.html" class="text-decoration-none text-dark">
+                    <div class="card shadow-sm">
+                        <img src="./crevetyes.png" class="card-img-top" style="height: 300px;">
+                        <div class="card-body">
+                            <h6 class="card-title">
+                                Plat de crevette
+                            </h6>
+                            <p class="fw-bold">
+                                5000 fcfa
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <button class="position-absolute" style="bottom: 20px;right:20px;border-radius:50%;">
+                    <i class="bi bi-cart-plus"></i>
+                    <div class="badge bg-danger position-absolute" id="product<?php echo $id_produit ?>"
+                        style="border-radius: 50%;bottom: -10px;right:-10px;"></div>
+                </button>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3 position-relative">
+                <a href="produit.html" class="text-decoration-none text-dark">
+                    <div class="card shadow-sm">
+                        <img src="./Omellette.png" class="card-img-top" style="height: 300px;">
+                        <div class="card-body">
+                            <h6 class="card-title">
+                                Omelette garni
+                            </h6>
+                            <p class="fw-bold">
+                                1000 fcfa
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <button class="position-absolute" style="bottom: 20px;right:20px;border-radius:50%;">
+                    <i class="bi bi-cart-plus"></i>
+                    <div class="badge bg-danger position-absolute" id="product<?php echo $id_produit ?>"
+                        style="border-radius: 50%;bottom: -10px;right:-10px;"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

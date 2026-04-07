@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Articles - Style Vinted</title>
+    <link href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-light bg-success border-bottom sticky-top">
+        <div class="container d-flex justify-content-between"><a class="navbar-brand fs-4 fw-bold">Au Plaisir du Gout
+            </a></div>
+    </nav>
+    <div class="container mt-4">
+        <!--Register-->
+        <div id="register" class="view">
+            <h2 class="text-center mt-4">Inscription</h2>
+            <div class="container mt-3">
+                <form method="post" id="formlogin">
+                    <div class="mb-3">
+                        <label for="registerPhone" class="form-label">Téléphone</label>
+                        <input type="tel" class="form-control" name="registerPhone" id="registerPhone" placeholder="+237 6XX XXX XXX">
+                    </div>
+                    <div class="mb-3">
+                        <label for="registerPassword" class="form-label">Mot de
+                            passe</label>
+                        <input type="password" class="form-control" name="registerPassword" id="registerPassword" placeholder="••••••••">
+                    </div>
+                        <button type="submit" class="btn btn-success w-100">Connexion</button>
+                        <p class="text-center mt-3">
+                            Déjà inscrit ? <a href="./login.php" class="onglet">S'inscrire</a>
+                        </p>
+                </form>
+            </div>
+        </div>
+        <!--Fin Register-->
+    </div>
+</body>
+<script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script src="./Controllers/app-login/js/app-login.js"></script>
+
+</html>
